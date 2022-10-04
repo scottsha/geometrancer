@@ -1,0 +1,7 @@
+[requires]
+eigen/3.4.0
+gtest/1.11.0
+bullet3/3.24
+
+[generators]
+cmake

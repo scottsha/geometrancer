@@ -15,7 +15,7 @@ endif ()
 
 include(${CMAKE_BINARY_DIR}/conan.cmake)
 
-conan_cmake_run(CONANFILE conanfile.txt
+conan_cmake_run(CONANFILE conanfile.py
         BASIC_SETUP TARGETS
         BUILD missing
 #        KEEP_RPATHS
@@ -25,5 +25,6 @@ set(CMAKE_MODULE_PATH ${CMAKE_BINARY_DIR} ${CMAKE_MODULE_PATH})
 #------------------------------#
 #    SUBDIRECTORIES
 #------------------------------#
+add_subdirectory(apps)
 add_subdirectory(src)
 add_subdirectory(unit_tests)

@@ -5,6 +5,7 @@ SET(TEST_EXE_NAME unit_tests)
 SET(TEST_SOURCE_FILES
         unit_test_main.cpp
 )
+
 file(GLOB BONUS_LOCAL_TEST_FILES ${PROJECT_SOURCE_DIR}/unit_tests/*.cpp)
 list(APPEND TEST_SOURCE_FILES ${BONUS_LOCAL_TEST_FILES})
 
